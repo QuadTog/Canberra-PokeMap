@@ -64,7 +64,7 @@ The output should look something like:
   $ pip --version
   pip 8.1.2 from /usr/local/lib/python2.7/site-packages (python 2.7)
 
-Now you can install all the Python dependencies:
+Now you can install all the Python dependencies, make sure you're still in the directory of PokemonGo-Map:
 
 Windows:
 
@@ -87,7 +87,7 @@ Linux/OSX:
 
 In order to run from a git clone, you must compile the front-end assets with node. Make sure you have node installed for your platform:
 
- * `Windows <https://nodejs.org/dist/v4.4.7/node-v4.4.7-x64.msi>`_
+ * `Windows <https://nodejs.org/dist/v4.5.0/node-v4.5.0-x64.msi>`_
  * `OSX <https://nodejs.org/dist/v4.4.7/node-v4.4.7.pkg>`_
  * Linux -- refer to the `package installation <https://nodejs.org/en/download/package-manager/>`_ for your flavor of OS
 
@@ -121,7 +121,7 @@ Once node/npm is installed, you can install the node dependencies and build the 
 Basic Launching
 ***************
 
-Once those have run, you should be able to start using the application, like so:
+Once those have run, you should be able to start using the application, make sure you're in the directory of PokemonGo-Map then:
 
 .. code-block:: bash
 
@@ -133,8 +133,8 @@ The most basic config you could use would look something like this:
 
 .. code-block:: bash
 
-  python ./runserver.py -a ptc -u 'USERNAME_HERE' -p 'PASSWORD_HERE' \
-   -l 'a street address or lat/lng coords here' -st 3 -k 'maps key here'
+  python ./runserver.py -a ptc -u "USERNAME_HERE" -p "PASSWORD_HERE" \
+   -l "a street address or lat/lng coords here" -st 3 -k "maps key here"
 
 Open your browser to http://localhost:5000 and your pokemon will begin to show up! Happy hunting!
 
